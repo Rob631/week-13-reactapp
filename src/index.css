@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Properties for the Title of the page */
+.site-title {
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* properties for the nav bar  */
+.nav {
+  background-color: darkblue;
+  color: ghostwhite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+/* properties for the nav bar  */
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+/* properties for the nav bar  */
+.nav a{
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: .25rem;
+}
+/* properties for the nav bar  */
+.nav li.active {
+  background-color: pink;
+}
+/* properties for the nav bar  */
+.nav li:hover {
+  background-color: goldenrod;
+}
+/* properties for Login Form  */
+input, button{
+  appearance: none;
+  background-color: none;
+  border: none;
+  outline: none;
+}
+/* properties for Login Form  */
+.App{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://i.pinimg.com/originals/e2/9c/26/e29c264a679aa396f31e580535bda42c.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 1000px;
+}
+/* properties for Login Form  */
+form{
+  display: block;
+  position:absolute;
+}
+/* properties for Login Form  */
+form:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: 1;
+  background-image: linear-gradient(to bottom right,gold, darkblue);
+}
+/* properties for Login Form  */
+form .form-inner{
+  position: relative;
+  display: block;
+  background-color: whitesmoke;
+  padding: 30px;
+  z-index: 2;
+}
+/* properties for Login Form  */
+form .form-inner h3{
+  color: darkblue;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+/* properties for Login Form  */
+form .form-inner .form-group{
+  display: block;
+  width: 300px;
+  margin-bottom: 15px;
+}
+/* properties for Login Form  */
+.form-inner .form-group label {
+  display: block;
+  color: darkblue;
+  font-size: 12px;
+  margin-bottom: 5px;
+  transition: 0.4s;
+}
+/* properties for Login Form  */
+.form-inner .form-group:focus-within label{
+  color: goldenrod;
+}
+/* properties for Login Form  */
+form .form-inner .form-group input {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: goldenrod;
+  border-radius: 8px;
+  transition: 0.4s;
+}
+/* properties for Login Form  */
+form .form-inner .form-group input:focus{
+  box-shadow: 0px 0px 3px black;
+}
+/* properties for Login Form  */
+form .form-inner input[type='submit'] {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-image: linear-gradient(to right, goldenrod 50%, goldenrod 50%, darkblue);
+  background-size: 200%;
+  background-position: 0%;
+  transition: 0.4s;
+  color: whitesmoke;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+form .form-inner input[type='submit']:hover {
+  background-position: 100% 0%;
+}
